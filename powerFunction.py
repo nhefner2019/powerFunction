@@ -1,3 +1,4 @@
+#---------------Function----------------------
 def power(base, exponent):
 	
 	tally = 0
@@ -10,7 +11,7 @@ def power(base, exponent):
 		
 	
 	
-#Main Program
+#---------------Main Program------------------------
 base = int(raw_input("What will be your base? "))
 exponent = int(raw_input("What will be your exponent? "))
 
