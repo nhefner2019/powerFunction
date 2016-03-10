@@ -6,7 +6,7 @@ def power(base, exponent):
 		answer = answer * base
 		tally += 1
 		
-	print(answer)
+	return answer
 		
 	
 	
@@ -14,4 +14,6 @@ def power(base, exponent):
 base = int(raw_input("What will be your base? "))
 exponent = int(raw_input("What will be your exponent? "))
 
-power(base, exponent)
+answer = power(base, exponent)
+
+print("Your base is {}. Your exponent is {}. The product is {}".format(base, exponent, answer))
