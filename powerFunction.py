@@ -8,7 +8,7 @@ def power(base, exponent):
 		
 	return result
 	
-#---------------Main Program------------------------
+
 def int_input(question):
 	
 	answer = raw_input(question)
@@ -21,8 +21,24 @@ def int_input(question):
 		#recursive call
 		return int_input("That is not an integer; try again. ")
 		
-		
-base = int_input("What will be your base? ")
+def float_input(question):
+	
+	answer = raw_input(question)
+	
+	try:
+		#terminating case
+		answer = float(answer)
+		return answer
+	except ValueError:
+		#recursive call
+		return float_input("That is not a float; try again. ")
+
+
+
+
+
+#---------------Main Program------------------------	
+base = float_input("What will be your base? ")
 exponent = int_input("What will be your exponent? ")
 
 product = power(base, exponent)
